@@ -1,0 +1,92 @@
+.maindiv {
+  width: 80%;
+  margin: auto;
+}
+.formdiv {
+  width: 60%;
+  margin: auto;
+}
+.form > label {
+  width: 100%;
+  font-weight: bold;
+}
+.form > input {
+  width: 98%;
+  padding: 7px 5px !important;
+  font-size: 15px;
+  margin-top: 3px !important;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+}
+.flexdiv {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.flexdiv > div {
+  width: 50%;
+}
+.flexdiv > div > input {
+  width: 98%;
+  padding: 7px 5px !important;
+  font-size: 15px;
+  margin-top: 3px !important;
+  outline: none;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+}
+.flexdiv > div > label {
+  width: 100%;
+  font-weight: bold;
+}
+.btn {
+  background-color: transparent;
+  border: 2px solid #1976d2;
+  width: 100%;
+  color: #1976d2;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+.error {
+  color: red;
+}
+@media (max-width: 600px) {
+  .flexdiv {
+    flex-direction: column;
+    gap: 8px !important;
+  }
+  .maindiv {
+    width: 100%;
+  }
+  .flexdiv > div {
+    width: 100% !important;
+  }
+  .flexdiv > div > input {
+    width: 97% !important;
+  }
+  .form > input {
+    width: 96% !important;
+    margin-bottom: 0px !important;
+  }
+  .formdiv {
+    width: 80% !important;
+  }
+  .btn {
+    margin-top: 15px !important;
+  }
+}
+@media (max-width: 400px) {
+  .formdiv {
+    width: 90% !important;
+  }
+}
