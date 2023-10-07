@@ -1,0 +1,146 @@
+.datadiv > h1 {
+  font-weight: bold;
+}
+.headdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.addbtn {
+  background-color: transparent;
+  border: 2px solid #1976d2;
+  color: #1976d2;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.addbtn:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+.editbtn {
+  background-color: transparent;
+  border: 2px solid #1976d2;
+  color: #1976d2;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.editbtn:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+.searchdiv {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cdcdcd;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.searchdiv > input {
+  font-size: 15px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.filterdiv {
+  display: flex;
+  gap: 10px;
+}
+.filterdiv > select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.box {
+  height: auto;
+}
+.pagination {
+  position: absolute;
+  right: 62px;
+  bottom: 9px;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .pagination {
+    right: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .pagination {
+    right: 22px;
+  }
+  .searchdiv {
+    width: 94% !important;
+  }
+}
+@media (max-width: 370px) {
+  .headdiv {
+    flex-direction: column;
+    align-items: baseline !important;
+  }
+  .headdiv > h1 {
+    margin-bottom: 0 !important;
+    font-size: 25px;
+  }
+  .addbtn {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+  .pagination {
+    right: 9px;
+  }
+}
+@media (max-width: 320px) {
+  .headdiv {
+    flex-direction: column;
+    align-items: baseline !important;
+  }
+  .headdiv > h1 {
+    margin-bottom: 0 !important;
+    font-size: 25px;
+  }
+  .addbtn {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+  .pagination {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+    right: 33px;
+  }
+  .searchdiv{
+    flex-direction: column;
+    align-items: baseline;
+    border: none;
+    padding: 0 !important;
+  }
+  .searchdiv>input{
+    width: 97%;
+    border: 1px solid #cdcdcd;
+    padding: 8px 10px !important;
+    border-radius: 5px;
+    margin-bottom: 10px !important;
+  }
+  .filterdiv{
+    width: 97%;
+    border: 1px solid #cdcdcd;
+    padding: 5px 10px !important;
+    border-radius: 5px;
+    gap: 30px !important;
+  }
+}

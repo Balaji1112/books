@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.MuiDataGrid-columnHeaderTitleContainer,
+.MuiDataGrid-cell {
+	justify-content: center !important;
+}
+.MuiInput-underline::before,
+.MuiInput-underline::after {
+	border: none !important;
+	box-shadow: none !important;
+}
+.MuiIconButton-sizeSmall,
+.MuiDataGrid-iconSeparator {
+	display: none !important;
+}
+.MuiDataGrid-columnHeaderTitle {
+	font-weight: bold !important;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #858585 !important;
+	letter-spacing: 0.13em;
+}
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+    display: none !important;
+}
